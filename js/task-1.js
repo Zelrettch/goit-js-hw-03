@@ -1,12 +1,10 @@
 'use strict';
 
 function slugify(text) {
-    const text = text.toLowerCase();
-    console.log(text.split(' '));
+    text = text.toLowerCase();
     return text.split(' ').join('-');
 }
 
-console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
 console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
 console.log(slugify('English for developer')); // "english-for-developer"
 console.log(slugify('Ten secrets of JavaScript')); // "ten-secrets-of-javascript"
